@@ -7,7 +7,7 @@ let weekDays = [
   "Wednesday",
   "Thursday",
   "Friday",
-  "Saturday"
+  "Saturday",
 ];
 let monthName = [
   "January",
@@ -21,7 +21,7 @@ let monthName = [
   "September",
   "October",
   "November",
-  "December"
+  "December",
 ];
 let day = weekDays[now.getDay()];
 let month = monthName[now.getMonth()];
@@ -41,8 +41,8 @@ formatDate(now);
 function getCityTemp(event) {
   event.preventDefault();
   let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
-  let city = document.querySelector("#search-input");
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city.value}&units=metric&appid=${apiKey}`;
+  let city = document.querySelector("#search-input").value;
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
   axios.get(url).then(showCityTemp);
 }
 

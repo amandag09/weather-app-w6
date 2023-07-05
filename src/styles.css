@@ -22,11 +22,13 @@ body {
 }
 
 .creator {
-  font-size: x-small;
-  color: ;
+  text-align: center;
+  font-size: small;
+  color: #198754;
 }
 
 .repository {
   color: #198754;
   text-decoration: underline;
+  font-weight: bold;
 }

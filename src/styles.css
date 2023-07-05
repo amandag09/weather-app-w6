@@ -20,3 +20,13 @@ body {
 .card-body {
   text-align: center;
 }
+
+.creator {
+  font-size: x-small;
+  color: ;
+}
+
+.repository {
+  color: #198754;
+  text-decoration: underline;
+}
